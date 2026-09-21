@@ -1,0 +1,11 @@
+credentials.json
+**/credentials.json
+
+*.csv
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+*.download
+
+__pycache__/

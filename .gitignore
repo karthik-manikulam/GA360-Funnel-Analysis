@@ -1,11 +1,35 @@
+# Credentials
 credentials.json
-**/credentials.json
+*credentials*.json
+*.pem
+*.key
+.env
 
+# Datasets
+datasets/
 *.csv
+*.xlsx
+*.xls
+*.parquet
 
+# Power BI
+*.pbix
+
+# Jupyter
 .ipynb_checkpoints/
-**/.ipynb_checkpoints/
+notebook_files/
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporary files
 *.download
 
-__pycache__/
+# Documents
+*.docx
+
+# Unnecessary folders
+Untitled Folder/

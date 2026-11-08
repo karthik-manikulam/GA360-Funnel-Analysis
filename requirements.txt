@@ -1,0 +1,16 @@
+# Core analysis
+pandas
+numpy
+
+# Visualisation
+matplotlib
+seaborn
+
+# Jupyter environment
+jupyter
+ipykernel
+
+# Google BigQuery access
+google-cloud-bigquery
+db-dtypes
+pandas-gbq

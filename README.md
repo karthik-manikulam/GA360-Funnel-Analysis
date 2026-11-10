@@ -84,20 +84,7 @@ The current dashboard reports the following headline values for the selected rep
 
 These are descriptive observations, not proof of causation. Validate them against the notebook's calculations and relevant segments before making business decisions.
 
-## Repository Structure
-
-```text
-GA360-Funnel-Analysis/
-├── GA360_Funnel_Analysis.ipynb
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── dashboard/
-│   ├── funnel_performance.png
-│   └── users_products.png
-└── docs/
-    └── project_documentation.md
-```
+ 
 
 ## How to Run
 
@@ -145,29 +132,10 @@ The source dataset is public, but running queries through the BigQuery API requi
 
 **Never commit service-account JSON files, API keys, access tokens, `.env` files or private project configuration.** The repository `.gitignore` should exclude credential files. Do not paste credentials into notebook cells or outputs.
 
-## Limitations and Reproducibility
-
-- BigQuery table availability, query costs, permissions and quotas depend on the Google Cloud environment used to execute the notebook.
-- Large query results should be filtered or aggregated in BigQuery before downloading to a local machine.
-- Dashboard figures depend on the report's filters and measure definitions.
-- The raw CSV exports and Power BI `.pbix` file are not included in this repository. The notebook and dashboard images document the analysis and final presentation.
-
-## Future Improvements
-
-- Add a clear data dictionary and metric definitions.
-- Add automated data-quality checks for nulls, duplicates and unexpected values.
-- Compare funnel conversion by channel, device, new/returning users and landing page.
-- Add cohort and repeat-purchase analysis.
-- Document the exact BigQuery SQL and Power BI DAX measure definitions.
-- Add a reproducible export process for the notebook's intermediate datasets.
-
 ## Author
 
-**[Your Name]**  
-B.Tech – Computer Science and Engineering  
-GitHub: [Add your GitHub profile link]  
-LinkedIn: [Add your LinkedIn profile link]
-
----
-
-If you use or adapt this project, please retain attribution to the Google Analytics Sample Dataset and verify dataset terms and access requirements.
+MANIKULAM KARTHIK 
+B.Tech –  ARTIFICIAL INTELLIEGENCE AND DATA SCIENCE  
+GitHub:  https://github.com/karthik-manikulam  
+LinkedIn:  www.linkedin.com/in/
+karthik-manikulam-608995320

@@ -84,49 +84,7 @@ The current dashboard reports the following headline values for the selected rep
 
 These are descriptive observations, not proof of causation. Validate them against the notebook's calculations and relevant segments before making business decisions.
 
- 
-
-## How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone <your-github-repository-url>
-cd GA360-Funnel-Analysis
-```
-
-### 2. Create and activate a virtual environment
-
-Windows PowerShell:
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-macOS / Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### 4. Open the notebook
-
-```bash
-jupyter notebook
-```
-
-Open `GA360_Funnel_Analysis.ipynb` and run the cells in order.
-
-### 5. BigQuery access
+###  BigQuery access
 
 The source dataset is public, but running queries through the BigQuery API requires a Google Cloud project and authentication. Configure Google Cloud authentication using an approved method, such as Application Default Credentials, and ensure the BigQuery API is enabled for your project.
 

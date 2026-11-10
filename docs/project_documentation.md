@@ -19,21 +19,7 @@ An end-to-end web analytics project using the Google Analytics Sample Dataset in
 - [Repository Structure](#repository-structure)
 - [Security](#security)
 
-## Dashboard Preview
-
-### 1. Funnel Performance
-
-![Funnel Performance Dashboard](dashboard/funnel_performance.png)
-
-Overall sessions, unique visitors, conversion rate and revenue, along with the purchase funnel, monthly conversion trend, top exit pages and largest funnel drop-offs.
-
-### 2. Users & Products
-
-![Users and Products Dashboard](dashboard/users_and_products.png)
-
-Average order value, new versus returning customer conversion, session duration, hourly session activity, traffic channels, device conversion and product performance.
-
-## Project Objectives
+ ## Project Objectives
 
 1. Measure the journey from page views and product interactions through checkout and purchase.
 2. Understand how conversion performance changes over time.
@@ -72,7 +58,6 @@ It represents Google Merchandise Store web analytics data. The project uses sess
 4. **Visualisation:** build exploratory charts in Python and interactive report pages in Power BI.
 5. **Recommendations:** use observed funnel drop-offs and customer/product patterns to identify areas for investigation and optimisation.
 
-The detailed SQL and Python work is in [`GA360_Funnel_Analysis.ipynb`](GA360_Funnel_Analysis.ipynb).
 
 ## Dashboard Highlights
 
@@ -108,32 +93,6 @@ These are descriptive observations, not proof of causation. Validate them agains
 3. Review high-interest, low-purchase products for page, pricing, availability and checkout issues.
 4. Compare conversion across traffic channels and device types.
 5. Investigate top exit pages and the largest funnel drop-offs.
-
-## Limitations
-
-- Dashboard values depend on the report period and filter state shown in the screenshots.
-- The dataset is a sample from a single store, so results may not generalise elsewhere.
-- The `.pbix` file and raw exports are not in the repository, so the dashboard cannot be rebuilt from Git alone.
-
-## Getting Started
-
-The source dataset is public, but running queries through the BigQuery API requires a Google Cloud project and authentication.
-
-1. Create or choose a Google Cloud project and enable the **BigQuery API**.
-2. Authenticate using an approved method, such as Application Default Credentials.
-3. Install the Python dependencies (pandas, numpy, matplotlib, seaborn, a BigQuery client library, Jupyter).
-4. Open `GA360_Funnel_Analysis.ipynb` and run the cells in order.
-
-## Repository Structure
-
-```
-.
-├── GA360_Funnel_Analysis.ipynb   # SQL + Python analysis
-├── dashboard/                    # Dashboard screenshots
-├── README.md
-└── .gitignore                    # Excludes credentials, .pbix and raw data
-```
-
-## Security
+ 
 
 Never commit service-account JSON files, API keys, access tokens, `.env` files or private project configuration. Keep credential files in `.gitignore`, and never paste credentials into notebook cells or outputs.
